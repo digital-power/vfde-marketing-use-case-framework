@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase8: PhaseContent = {
   id: 8,
@@ -20,6 +20,11 @@ export const phase8: PhaseContent = {
     "Is the solution successfully deployed to production?",
     "Are monitoring dashboards and alerts configured?",
     "Are users ready to use the solution?",
+  ],
+  deliverables: [
+    "Deployed solution",
+    "Monitoring dashboard",
+    "Communication plan"
   ],
   formFields: [
     {
@@ -57,37 +62,31 @@ export const phase8: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'deploymentComplexity',
-      label: 'Deployment Complexity',
-      description: 'Complexity of the deployment process',
-      scaleLabels: ['Very Simple', 'Simple', 'Moderate', 'Complex', 'Very Complex'],
+      id: "deploymentComplexity",
+      label: "Deployment Complexity",
+      description: "Complexity of the deployment process",
+      scaleLabels: ["Very Simple", "Simple", "Moderate", "Complex", "Very Complex"],
       inverse: true,
     },
     {
-      id: 'monitoringReadiness',
-      label: 'Monitoring Readiness',
-      description: 'Quality and completeness of monitoring setup',
-      scaleLabels: ['Poor', 'Limited', 'Adequate', 'Good', 'Excellent'],
+      id: "monitoringReadiness",
+      label: "Monitoring Readiness",
+      description: "Quality and completeness of monitoring setup",
+      scaleLabels: ["Poor", "Limited", "Adequate", "Good", "Excellent"],
     },
     {
-      id: 'userReadiness',
-      label: 'User Readiness',
-      description: 'How prepared users are for the new solution',
-      scaleLabels: ['Not Ready', 'Limited', 'Somewhat Ready', 'Ready', 'Fully Prepared'],
+      id: "userReadiness",
+      label: "User Readiness",
+      description: "How prepared users are for the new solution",
+      scaleLabels: ["Not Ready", "Limited", "Somewhat Ready", "Ready", "Fully Prepared"],
     },
     {
-      id: 'deploymentRisk',
-      label: 'Deployment Risk',
-      description: 'Risk level of the deployment process',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "deploymentRisk",
+      label: "Deployment Risk",
+      description: "Risk level of the deployment process",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     }
   ],
   scoringTitle: "Deployment & Monitoring",
-  deliverables: [
-    'Performance dashboard',
-    'Alert system',
-    'Regular reports',
-    'Issue tracking'
-  ]
 }

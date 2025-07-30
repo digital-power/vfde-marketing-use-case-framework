@@ -23,7 +23,7 @@ function App() {
   }
 
 
-  const progressValue = (currentPhase / 8) * 100
+  const progressValue = (currentPhase / phases.length) * 100
 
   // Prepare phase data for markdown export
   const phaseData: PhaseData[] = phases.map(phase => ({
@@ -169,7 +169,7 @@ function App() {
                 fontSize: '14px',
                 color: '#6b7280'
               }}>
-                Phase {currentPhase} of 8
+                Phase {currentPhase} of {phases.length}
               </div>
             </div>
             

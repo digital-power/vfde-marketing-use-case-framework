@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase1: PhaseContent = {
   id: 1,
@@ -19,6 +19,11 @@ export const phase1: PhaseContent = {
     "Has the business opportunity been clearly defined?",
     "Are the stakeholders identified and aligned?",
     "Are the success criteria and KPIs defined?",
+  ],
+  deliverables: [
+    "Use case definition",
+    "Data availability assessment", 
+    "Success metrics"
   ],
   formFields: [
     {
@@ -71,29 +76,23 @@ export const phase1: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'strategicAlignment',
-      label: 'Strategic Alignment',
-      description: 'How well it aligns with company strategy',
-      scaleLabels: ['Poor', 'Limited', 'Good', 'Strong', 'Perfect'],
+      id: "strategicAlignment",
+      label: "Strategic Alignment",
+      description: "How well it aligns with company strategy",
+      scaleLabels: ["Poor", "Limited", "Good", "Strong", "Perfect"],
     },
     {
-      id: 'customerValue',
-      label: 'Customer Value',
-      description: 'Direct benefit to customers',
-      scaleLabels: ['Low', 'Minor', 'Moderate', 'High', 'Exceptional'],
+      id: "customerValue",
+      label: "Customer Value",
+      description: "Direct benefit to customers",
+      scaleLabels: ["Low", "Minor", "Moderate", "High", "Exceptional"],
     },
     {
-      id: 'dataAvailability',
-      label: 'Data Availability',
-      description: 'Quality and accessibility of required data',
-      scaleLabels: ['Poor', 'Limited', 'Average', 'Good', 'Excellent'],
+      id: "dataAvailability",
+      label: "Data Availability",
+      description: "Quality and accessibility of required data",
+      scaleLabels: ["Poor", "Limited", "Average", "Good", "Excellent"],
     }
   ],
   scoringTitle: "Ideation",
-  deliverables: [
-    'Use case definition',
-    'Data availability assessment', 
-    'Success metrics',
-    'Go/No-go decision'
-  ]
 }

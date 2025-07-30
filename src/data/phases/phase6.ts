@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase6: PhaseContent = {
   id: 6,
@@ -11,13 +11,19 @@ export const phase6: PhaseContent = {
     "Gather user feedback and performance metrics",
   ],
   expectedRoles: [
-    "Product Manager (Owner)",
+    "Product Owner (Owner)",
     "Digital Marketing Specialist (Support)",
+    "Technical Web Analyst (Support)",
     "Data Engineer (Support)",
   ],
   checklistQuestions: [
     "Has the solution been tested with real users?",
     "Are the results of user testing documented?",
+  ],
+  deliverables: [
+    "Validation results",
+    "Performance metrics",
+    "User feedback",
   ],
   formFields: [
     {
@@ -47,30 +53,24 @@ export const phase6: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'userSatisfaction',
-      label: 'User Satisfaction',
-      description: 'Satisfaction level of users with the solution',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "userSatisfaction",
+      label: "User Satisfaction",
+      description: "Satisfaction level of users with the solution",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
     },
     {
-      id: 'performanceReliability',
-      label: 'Performance Reliability',
-      description: 'Reliability of the solution under expected load',
-      scaleLabels: ['Very Poor', 'Poor', 'Average', 'Good', 'Excellent'],
+      id: "performanceReliability",
+      label: "Performance Reliability",
+      description: "Reliability of the solution under expected load",
+      scaleLabels: ["Very Poor", "Poor", "Average", "Good", "Excellent"],
     },
     {
-      id: 'feedbackProcessingEffort',
-      label: 'Feedback Processing Effort',
-      description: 'Effort required to process and implement feedback',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "feedbackProcessingEffort",
+      label: "Feedback Processing Effort",
+      description: "Effort required to process and implement feedback",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     }
   ],
   scoringTitle: "Validation",
-  deliverables: [
-    'Validation results',
-    'Performance metrics',
-    'User feedback',
-    'Optimization recommendations'
-  ]
 }

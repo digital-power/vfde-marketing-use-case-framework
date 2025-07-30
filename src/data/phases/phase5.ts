@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase5: PhaseContent = {
   id: 5,
@@ -20,6 +20,11 @@ export const phase5: PhaseContent = {
     "Are all functional and non-functional requirements implemented?",
     "Is the code following established coding standards (testing, documentation, etc.)?",
     "Is basic functionality working as expected when tested?"
+  ],
+  deliverables: [
+    "Developed solution",
+    "Unit/integration tests",
+    "Documentation",
   ],
   formFields: [
     {
@@ -57,23 +62,23 @@ export const phase5: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'implementationProgress',
-      label: 'Implementation Progress',
-      description: 'Current state of development completion',
-      scaleLabels: ['Behind', 'Delayed', 'On Track', 'Ahead', 'Complete'],
+      id: "implementationProgress",
+      label: "Implementation Progress",
+      description: "Current state of development completion",
+      scaleLabels: ["Behind", "Delayed", "On Track", "Ahead", "Complete"],
     },
     {
-      id: 'codeQuality',
-      label: 'Code Quality',
-      description: 'Maintainability and quality of developed code',
-      scaleLabels: ['Poor', 'Below Standards', 'Acceptable', 'Good', 'Excellent'],
+      id: "testCoverage",
+      label: "Test Coverage",
+      description: "Extent of unit and integration tests covering the codebase",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
+    },
+    {
+      id: "codeQuality",
+      label: "Code Quality",
+      description: "Maintainability and quality of developed code",
+      scaleLabels: ["Poor", "Below Standards", "Acceptable", "Good", "Excellent"],
     }
   ],
   scoringTitle: "Development",
-  deliverables: [
-    'Developed solution',
-    'Test results',
-    'Documentation',
-    'Code review'
-  ]
 }

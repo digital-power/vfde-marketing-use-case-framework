@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase4: PhaseContent = {
   id: 4,
@@ -23,6 +23,10 @@ export const phase4: PhaseContent = {
     "Are scalability and performance requirements addressed?",
     "Is the design reviewed and approved by stakeholders?"
   ],
+  deliverables: [
+    "Technical architecture",
+    "Implementation plan",
+  ],
   formFields: [
     {
       id: "architectureDesign",
@@ -43,30 +47,24 @@ export const phase4: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'technicalComplexity',
-      label: 'Technical Complexity',
-      description: 'Complexity of the technical implementation',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "technicalComplexity",
+      label: "Technical Complexity",
+      description: "Complexity of the technical implementation",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     },
     {
-      id: 'scalabilityPotential',
-      label: 'Scalability Potential',
-      description: 'Ability to expand and grow impact',
-      scaleLabels: ['Limited', 'Small', 'Moderate', 'High', 'Unlimited'],
+      id: "scalabilityPotential",
+      label: "Scalability Potential",
+      description: "Ability to expand and grow impact",
+      scaleLabels: ["Limited", "Small", "Moderate", "High", "Unlimited"],
     },
     {
-      id: 'reusability',
-      label: 'Reusability',
-      description: 'Potential to reuse components for other use cases',
-      scaleLabels: ['Single-use', 'Limited', 'Some', 'High', 'Universal'],
+      id: "reusability",
+      label: "Reusability",
+      description: "Potential to reuse components for other use cases",
+      scaleLabels: ["Single-use", "Limited", "Some", "High", "Universal"],
     }
   ],
   scoringTitle: "Technical",
-  deliverables: [
-    'Technical architecture',
-    'Implementation plan',
-    'Risk assessment',
-    'Testing strategy'
-  ]
 }

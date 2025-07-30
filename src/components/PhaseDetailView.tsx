@@ -51,9 +51,9 @@ export function PhaseDetailView({
     'Data Engineer', 
     'Data Scientist',
     'DevOps Engineer',
-    'Business Analyst',
     'Product Owner',
     'Finance',
+    'Technical Web Analyst',
   ])
 
   const [companyOptions, setCompanyOptions] = useState([

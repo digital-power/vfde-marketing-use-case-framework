@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase2: PhaseContent = {
   id: 2,
@@ -21,7 +21,15 @@ export const phase2: PhaseContent = {
     "Has the quantified business value and ROI been projected?",
     "Is the feasibility of the business case assessed?",
     "Are the required resources identified and available?",
-    "Are the risks and mitigation strategies defined?"
+    "Are the risks and mitigation strategies defined?",
+    "Are the timelines and milestones established?"
+  ],
+  deliverables: [
+    "Business case document",
+    "ROI analysis",
+    "Resource requirements",
+    "Timeline and milestones",
+    "Go/no-go decision"
   ],
   formFields: [
     {
@@ -55,35 +63,37 @@ export const phase2: PhaseContent = {
       placeholder: "Identify potential risks related to data quality, technical feasibility, and operational impact...",
       rows: 4,
       section: "Risk Management"
+    },
+    {
+      id: "timelineAndMilestones",
+      label: "What is the estimated timeline and key milestones?",
+      type: "textarea",
+      placeholder: "Outline the expected timeline for implementation, including key milestones and deliverables...",
+      rows: 3,
+      section: "Timeline",
     }
   ],
   scoringAxes: [
     {
-      id: 'revenueImpact',
-      label: 'Revenue Potential',
-      description: 'Expected annual revenue impact',
-      scaleLabels: ['Minimal', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "revenueImpact",
+      label: "Revenue Potential",
+      description: "Expected annual revenue impact",
+      scaleLabels: ["Minimal", "Low", "Moderate", "High", "Very High"],
     }, 
     {
-      id: 'resourceRequirements',
-      label: 'Resource Requirements',
-      description: 'Resource requirements to implement this use case',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "resourceRequirements",
+      label: "Resource Requirements",
+      description: "Resource requirements to implement this use case",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     },
     {
-      id: 'riskLevel',
-      label: 'Risk Level',
-      description: 'Level of technical, business and operational risks',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "riskLevel",
+      label: "Risk Level",
+      description: "Level of technical, business and operational risks",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     }
   ],
-  scoringTitle: "Business Case",
-  deliverables: [
-    'Business case document',
-    'ROI analysis',
-    'Resource requirements',
-    'Timeline estimate'
-  ]
+  scoringTitle: "Business Case"
 }

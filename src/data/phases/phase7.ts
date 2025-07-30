@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase7: PhaseContent = {
   id: 7,
@@ -19,6 +19,11 @@ export const phase7: PhaseContent = {
     "Has all feedback been processed and addressed?",
     "Does the updated solution still meet all functional and non-functional requirements?",
     "Is the solution ready for deployment?"
+  ],
+  deliverables: [
+    "Updated solution",
+    "Final approval from stakeholders",
+    "Deployment readiness assessment"
   ],
   formFields: [
     {
@@ -56,30 +61,24 @@ export const phase7: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'requirementCompliance',
-      label: 'Requirements Compliance',
-      description: 'How well the solution meets all functional and non-functional requirements',
-      scaleLabels: ['Poor', 'Partial', 'Good', 'Strong', 'Complete'],
+      id: "requirementCompliance",
+      label: "Requirements Compliance",
+      description: "How well the solution meets all functional and non-functional requirements",
+      scaleLabels: ["Poor", "Partial", "Good", "Strong", "Complete"],
     },
     {
-      id: 'deploymentReadiness',
-      label: 'Deployment Readiness',
-      description: 'How ready the solution is for production deployment',
-      scaleLabels: ['Not Ready', 'Some Issues', 'Nearly Ready', 'Ready', 'Fully Ready'],
+      id: "deploymentReadiness",
+      label: "Deployment Readiness",
+      description: "How ready the solution is for production deployment",
+      scaleLabels: ["Not Ready", "Some Issues", "Nearly Ready", "Ready", "Fully Ready"],
     },
     {
-      id: 'deploymentRisk',
-      label: 'Deployment Risk',
-      description: 'Risk associated with deploying the solution to production',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "deploymentRisk",
+      label: "Deployment Risk",
+      description: "Risk associated with deploying the solution to production",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     }
   ],
   scoringTitle: "Process Feedback & Validation",
-  deliverables: [
-    'Feedback analysis document',
-    'Requirements validation report',
-    'Stakeholder approval confirmation',
-    'Deployment readiness assessment'
-  ]
 }

@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase3: PhaseContent = {
   id: 3,
@@ -12,16 +12,18 @@ export const phase3: PhaseContent = {
     "Validate requirements with stakeholders"
   ],
   expectedRoles: [
-    "Business Analyst (Owner)",
     "Product Owner (Support)",
-    "Data Engineer (Support)",
-    "Key Stakeholders (Input)"
   ],
   checklistQuestions: [
     "Are all functional requirements clearly documented?",
     "Are non-functional requirements defined with measurable criteria?",
     "Have system constraints and dependencies been identified?",
     "Are requirements validated and approved by stakeholders?",
+  ],
+  deliverables: [
+    "Requirements document",
+    "Acceptance criteria",
+    "System constraints",
   ],
   formFields: [
     {
@@ -59,37 +61,31 @@ export const phase3: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'requirementsClarity',
-      label: 'Requirements Clarity',
-      description: 'How well-defined and clear the requirements are',
-      scaleLabels: ['Vague', 'Unclear', 'Moderate', 'Clear', 'Crystal Clear'],
+      id: "requirementsClarity",
+      label: "Requirements Clarity",
+      description: "How well-defined and clear the requirements are",
+      scaleLabels: ["Vague", "Unclear", "Moderate", "Clear", "Crystal Clear"],
     },
     {
-      id: 'stakeholderAlignment',
-      label: 'Stakeholder Alignment',
-      description: 'Level of agreement among stakeholders on requirements',
-      scaleLabels: ['Poor', 'Limited', 'Good', 'Strong', 'Perfect'],
+      id: "stakeholderAlignment",
+      label: "Stakeholder Alignment",
+      description: "Level of agreement among stakeholders on requirements",
+      scaleLabels: ["Poor", "Limited", "Good", "Strong", "Perfect"],
     },
     {
-      id: 'requirementsComplexity',
-      label: 'Requirements Complexity',
-      description: 'Complexity of the requirements',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "requirementsComplexity",
+      label: "Requirements Complexity",
+      description: "Complexity of the requirements",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     },
     {
-      id: 'changeRisk',
-      label: 'Requirements Change Risk',
-      description: 'Risk of requirements changing during development',
-      scaleLabels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High'],
+      id: "changeRisk",
+      label: "Requirements Change Risk",
+      description: "Risk of requirements changing during development",
+      scaleLabels: ["Very Low", "Low", "Moderate", "High", "Very High"],
       inverse: true,
     }
   ],
   scoringTitle: "Requirements Gathering",
-  deliverables: [
-    'Requirements document',
-    'Acceptance criteria',
-    'System constraints',
-    'Stakeholder sign-off'
-  ]
 }

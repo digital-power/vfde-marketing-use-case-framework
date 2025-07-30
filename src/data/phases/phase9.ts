@@ -1,4 +1,4 @@
-import type { PhaseContent } from '../phases'
+import type { PhaseContent } from "../phases"
 
 export const phase9: PhaseContent = {
   id: 9,
@@ -21,6 +21,12 @@ export const phase9: PhaseContent = {
     "Is model performance improving over time?",
     "Are operational processes efficient?",
     "Is continuous improvement cycle established?"
+  ],
+  deliverables: [
+    "Optimization plan",
+    "Feature enhancement plan",
+    "Model improvement report",
+    "Process improvement plan"
   ],
   formFields: [
     {
@@ -58,29 +64,23 @@ export const phase9: PhaseContent = {
   ],
   scoringAxes: [
     {
-      id: 'featureValue',
-      label: 'Feature Value',
-      description: 'Value delivered by new features based on user feedback',
-      scaleLabels: ['No Value', 'Low Value', 'Medium Value', 'High Value', 'Very High Value'],
+      id: "featureValue",
+      label: "Feature Value",
+      description: "Value delivered by new features based on user feedback",
+      scaleLabels: ["No Value", "Low Value", "Medium Value", "High Value", "Very High Value"],
     },
     {
-      id: 'modelPerformance',
-      label: 'Model Performance',
-      description: 'Improvement in model performance based on production data',
-      scaleLabels: ['Very Poor', 'Poor', 'Average', 'Good', 'Excellent'],
+      id: "modelPerformance",
+      label: "Model Performance",
+      description: "Improvement in model performance based on production data",
+      scaleLabels: ["Very Poor", "Poor", "Average", "Good", "Excellent"],
     },
     {
-      id: 'processEfficiency',
-      label: 'Process Efficiency',
-      description: 'Efficiency of operational processes and workflows',
-      scaleLabels: ['Very Inefficient', 'Inefficient', 'Average', 'Efficient', 'Very Efficient'],
+      id: "processEfficiency",
+      label: "Process Efficiency",
+      description: "Efficiency of operational processes and workflows",
+      scaleLabels: ["Very Inefficient", "Inefficient", "Average", "Efficient", "Very Efficient"],
     }
   ],
   scoringTitle: "Optimization & Iteration Scoring Assessment",
-  deliverables: [
-    'Optimization plan',
-    'Performance improvements',
-    'Lessons learned',
-    'Next iteration roadmap'
-  ]
 }

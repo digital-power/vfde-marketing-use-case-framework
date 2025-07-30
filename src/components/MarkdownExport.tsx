@@ -230,6 +230,9 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
           <div style={{
             maxHeight: '400px',
             overflow: 'auto',
+            overflowY: 'scroll',
+            WebkitOverflowScrolling: 'touch',
+            scrollBehavior: 'smooth',
             border: '1px solid #e2e8f0',
             borderRadius: '4px',
             padding: '15px',

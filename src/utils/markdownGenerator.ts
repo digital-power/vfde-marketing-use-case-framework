@@ -52,21 +52,9 @@ function generateScoringMarkdown(phaseId: number, formData: FormData): string {
       return axis.inverse ? (6 - rawScore) : rawScore
     })
     const averageScore = scores.reduce((sum, score) => sum + score, 0) / scores.length
+  
     
-    let interpretation = ''
-    if (averageScore >= 4) {
-      interpretation = 'Strong potential - high priority for implementation'
-    } else if (averageScore >= 3.5) {
-      interpretation = 'Good potential - recommended for implementation'
-    } else if (averageScore >= 3) {
-      interpretation = 'Moderate potential - requires further evaluation'
-    } else if (averageScore >= 2.5) {
-      interpretation = 'Limited potential - consider improvements or alternatives'
-    } else {
-      interpretation = 'Low potential - not recommended for current implementation'
-    }
-    
-    markdown += `\n**Overall Assessment:** ${averageScore.toFixed(1)}/5 - ${interpretation}\n\n`
+    markdown += `\n**Overall Assessment:** ${averageScore.toFixed(1)}/5 \n\n`
   }
   
   return markdown
@@ -161,7 +149,7 @@ export function generatePhaseMarkdown(phase: PhaseData): string {
         )
         
         if (fieldsWithData.length > 0) {
-          markdown += `## ${sectionName}\n\n`
+          markdown += `## ${sectionName}\n`
           fieldsWithData.forEach(field => {
             const value = formData[field.id]
             markdown += `### ${field.label}\n${value}\n\n`
@@ -204,7 +192,7 @@ export function generatePhaseMarkdown(phase: PhaseData): string {
   const phaseData = phaseContent[phase.id]
   const phaseChecklistQuestions = phaseData?.checklistQuestions || []
   if (phaseChecklistQuestions.length > 0) {
-    markdown += `## Phase Completion Checklist\n\n`
+    markdown += `## Phase Completion Checklist\n`
     const completedChecklistItems = phaseChecklistQuestions.filter((_, index) => 
       formData[`question${phase.id}_${index}`] === 'true'
     )
