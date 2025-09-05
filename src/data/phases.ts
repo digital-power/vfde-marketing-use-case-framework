@@ -63,14 +63,14 @@ export const phases: Phase[] = Object.values(phaseContent).map(phase => ({
 }))
 
 export const categoryColors: Record<string, string> = {
-  Discovery: "bg-green-800",
-  Assessment: "bg-green-600", 
-  Requirements: "bg-green-500",
-  Design: "bg-green-400",
-  Development: "bg-green-600",
-  Validation: "bg-green-700",
-  Implementation: "bg-green-800",
-  Monitoring: "bg-green-900",
-  Optimization: "bg-gray-900"
+  Discovery: "bg-red-800",
+  Assessment: "bg-red-600", 
+  Requirements: "bg-red-500",
+  Design: "bg-red-400",
+  Development: "bg-red-600",
+  Validation: "bg-red-700",
+  Implementation: "bg-red-800",
+  Monitoring: "bg-red-900",
+  Optimization: "bg-red-950"
 }
 

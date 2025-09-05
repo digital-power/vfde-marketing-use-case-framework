@@ -199,7 +199,7 @@ export function PhaseDetailView({
                 }}
                 style={{
                   padding: '4px 8px',
-                  backgroundColor: '#22c55e',
+                  backgroundColor: '#bd3333',
                   color: 'white',
                   border: 'none',
                   borderRadius: '4px',
@@ -240,7 +240,7 @@ export function PhaseDetailView({
       borderRadius: '12px',
       padding: '30px',
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-      borderLeft: '5px solid #22c55e',
+      borderLeft: '5px solid #bd3333',
       animation: 'fadeIn 0.3s ease-in'
     }}>
       <div style={{
@@ -252,7 +252,7 @@ export function PhaseDetailView({
         <div style={{
           width: '60px',
           height: '60px',
-          background: '#22c55e',
+          background: '#bd3333',
           color: 'white',
           borderRadius: '50%',
           display: 'flex',
@@ -266,7 +266,7 @@ export function PhaseDetailView({
         
         <div style={{ flex: 1 }}>
           <div style={{
-            background: categoryColors[content.category] || '#22c55e',
+            background: categoryColors[content.category] || '#bd3333',
             color: 'white',
             padding: '6px 15px',
             borderRadius: '20px',
@@ -296,12 +296,12 @@ export function PhaseDetailView({
       }}>
         {/* Phase Description - Highlighted Block */}
         <div style={{
-          background: 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)',
-          border: '1px solid #22c55e',
+          background: 'linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)',
+          border: '1px solid #bd3333',
           borderRadius: '12px',
           padding: '24px',
           marginBottom: '25px',
-          boxShadow: '0 2px 8px rgba(34, 197, 94, 0.1)'
+          boxShadow: '0 2px 8px rgba(189, 51, 51, 0.1)'
         }}>
           <div style={{
             display: 'flex',
@@ -312,7 +312,7 @@ export function PhaseDetailView({
             <div style={{
               width: '24px',
               height: '24px',
-              background: '#22c55e',
+              background: '#bd3333',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -326,14 +326,14 @@ export function PhaseDetailView({
             <h3 style={{
               fontSize: '18px',
               fontWeight: '700',
-              color: '#166534',
+              color: '#b91c1c',
               margin: 0
             }}>
               Phase Description
             </h3>
           </div>
           <p style={{ 
-            color: '#166534', 
+            color: '#b91c1c', 
             fontSize: '16px', 
             margin: 0, 
             lineHeight: '1.6',

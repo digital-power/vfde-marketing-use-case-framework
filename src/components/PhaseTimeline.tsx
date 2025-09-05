@@ -19,7 +19,7 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
         top: 0,
         bottom: 0,
         width: '4px',
-        background: 'linear-gradient(180deg, #22c55e 0%, #16a34a 50%, #15803d 100%)',
+        background: 'linear-gradient(180deg, #bd3333 0%, #b91c1c 50%, #991b1b 100%)',
         transform: 'translateX(-50%)',
         content: ''
       }} />
@@ -45,12 +45,12 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
           {/* Phase content with exact original styling */}
           <div
             style={{
-              background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
+              background: 'linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%)',
               borderRadius: '12px',
               padding: '25px',
-              boxShadow: '0 4px 12px rgba(34, 197, 94, 0.1)',
-              borderLeft: index % 2 === 0 ? 'none' : '5px solid #22c55e',
-              borderRight: index % 2 === 0 ? '5px solid #22c55e' : 'none',
+              boxShadow: '0 4px 12px rgba(189, 51, 51, 0.1)',
+              borderLeft: index % 2 === 0 ? 'none' : '5px solid #bd3333',
+              borderRight: index % 2 === 0 ? '5px solid #bd3333' : 'none',
               position: 'relative',
               transition: 'all 0.3s ease',
               marginLeft: index % 2 === 0 ? '0' : '55%',
@@ -58,10 +58,10 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
               textAlign: index % 2 === 0 ? 'right' as const : 'left' as const
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(34, 197, 94, 0.15)'
+              e.currentTarget.style.boxShadow = '0 6px 20px rgba(189, 51, 51, 0.15)'
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 12px rgba(34, 197, 94, 0.1)'
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(189, 51, 51, 0.1)'
             }}
           >
             <div style={{
@@ -104,7 +104,7 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
                   cursor: 'pointer',
                   fontSize: '14px',
                   fontWeight: '600',
-                  color: '#16a34a',
+                  color: '#b91c1c',
                   padding: '0',
                   flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'
                 }}
@@ -142,7 +142,7 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
                     }}
                   >
                     <span style={{
-                      color: '#22c55e',
+                      color: '#bd3333',
                       fontSize: '12px',
                       fontWeight: 'bold'
                     }}>
@@ -163,7 +163,7 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
             transform: 'translate(-50%, -50%)',
             width: '50px',
             height: '50px',
-            background: '#22c55e',
+            background: '#bd3333',
             color: 'white',
             borderRadius: '50%',
             display: 'flex',
@@ -191,7 +191,7 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
             margin-left: 70px !important;
             margin-right: 0 !important;
             text-align: left !important;
-            border-left: 5px solid #22c55e !important;
+            border-left: 5px solid #bd3333 !important;
             border-right: none !important;
           }
           .timeline-mobile::before {
@@ -210,15 +210,15 @@ export function PhaseTimeline({ onPhaseClick }: PhaseTimelineProps) {
 // Helper function to get exact category colors from original
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
-    'Discovery': '#15803d',
-    'Assessment': '#16a34a', 
-    'Requirements': '#22c55e',
-    'Design': '#16a34a',
-    'Development': '#16a34a',
-    'Validation': '#15803d',
-    'Implementation': '#166534',
-    'Monitoring': '#14532d',
-    'Optimization': '#052e16'
+    'Discovery': '#991b1b',
+    'Assessment': '#b91c1c', 
+    'Requirements': '#bd3333',
+    'Design': '#b91c1c',
+    'Development': '#b91c1c',
+    'Validation': '#991b1b',
+    'Implementation': '#991b1b',
+    'Monitoring': '#7f1d1d',
+    'Optimization': '#7f1d1d'
   }
-  return colors[category] || '#22c55e'
+  return colors[category] || '#bd3333'
 }

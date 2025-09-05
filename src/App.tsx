@@ -50,7 +50,7 @@ function App() {
         margin: '0 auto'
       }}>
         <h1 style={{
-          color: '#22c55e',
+          color: '#bd3333',
           marginBottom: '15px',
           fontSize: '28px',
           textAlign: 'center' as const,
@@ -75,7 +75,7 @@ function App() {
         <div style={{ textAlign: 'center' as const, marginBottom: '30px' }}>
           <button
             style={{
-              background: viewMode === 'timeline' ? '#16a34a' : '#22c55e',
+              background: viewMode === 'timeline' ? '#b91c1c' : '#bd3333',
               color: 'white',
               border: 'none',
               padding: '12px 24px',
@@ -86,14 +86,14 @@ function App() {
               fontWeight: '600',
               transition: 'all 0.3s ease',
               fontSize: '14px',
-              boxShadow: viewMode === 'timeline' ? '0 4px 12px rgba(34, 197, 94, 0.3)' : 'none'
+              boxShadow: viewMode === 'timeline' ? '0 4px 12px rgba(189, 51, 51, 0.3)' : 'none'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#16a34a'
+              e.currentTarget.style.background = '#b91c1c'
               e.currentTarget.style.transform = 'translateY(-2px)'
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = viewMode === 'timeline' ? '#16a34a' : '#22c55e'
+              e.currentTarget.style.background = viewMode === 'timeline' ? '#b91c1c' : '#bd3333'
               e.currentTarget.style.transform = 'translateY(0)'
             }}
             onClick={() => setViewMode('timeline')}
@@ -102,7 +102,7 @@ function App() {
           </button>
           <button
             style={{
-              background: viewMode === 'detail' ? '#16a34a' : '#22c55e',
+              background: viewMode === 'detail' ? '#b91c1c' : '#bd3333',
               color: 'white',
               border: 'none',
               padding: '12px 24px',
@@ -113,14 +113,14 @@ function App() {
               fontWeight: '600',
               transition: 'all 0.3s ease',
               fontSize: '14px',
-              boxShadow: viewMode === 'detail' ? '0 4px 12px rgba(34, 197, 94, 0.3)' : 'none'
+              boxShadow: viewMode === 'detail' ? '0 4px 12px rgba(189, 51, 51, 0.3)' : 'none'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#16a34a'
+              e.currentTarget.style.background = '#b91c1c'
               e.currentTarget.style.transform = 'translateY(-2px)'
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = viewMode === 'detail' ? '#16a34a' : '#22c55e'
+              e.currentTarget.style.background = viewMode === 'detail' ? '#b91c1c' : '#bd3333'
               e.currentTarget.style.transform = 'translateY(0)'
             }}
             onClick={() => setViewMode('detail')}
@@ -156,7 +156,7 @@ function App() {
                 overflow: 'hidden'
               }}>
                 <div style={{
-                  background: 'linear-gradient(90deg, #22c55e, #16a34a)',
+                  background: 'linear-gradient(90deg, #bd3333, #b91c1c)',
                   height: '100%',
                   width: `${progressValue}%`,
                   transition: 'width 0.3s ease',

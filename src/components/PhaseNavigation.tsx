@@ -21,9 +21,9 @@ export function PhaseNavigation({ currentPhase, onPhaseSelect }: PhaseNavigation
           <button
             key={phase.id}
             style={{
-              background: isActive ? '#22c55e' : 'white',
-              color: isActive ? 'white' : '#22c55e',
-              border: '2px solid #22c55e',
+              background: isActive ? '#bd3333' : 'white',
+              color: isActive ? 'white' : '#bd3333',
+              border: '2px solid #bd3333',
               padding: '6px 12px',
               borderRadius: '20px',
               cursor: 'pointer',
@@ -39,19 +39,19 @@ export function PhaseNavigation({ currentPhase, onPhaseSelect }: PhaseNavigation
             }}
             onMouseEnter={(e) => {
               if (!isActive) {
-                e.currentTarget.style.background = '#f0fdf4'
+                e.currentTarget.style.background = '#fef2f2'
               }
               e.currentTarget.style.transform = 'translateY(-1px)'
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = isActive ? '#22c55e' : 'white'
+              e.currentTarget.style.background = isActive ? '#bd3333' : 'white'
               e.currentTarget.style.transform = 'translateY(0)'
             }}
             onClick={() => onPhaseSelect(phase.id)}
           >
             <div style={{
-              background: isActive ? 'white' : '#dcfce7',
-              color: '#22c55e',
+              background: isActive ? 'white' : '#fee2e2',
+              color: '#bd3333',
               borderRadius: '50%',
               width: '20px',
               height: '20px',

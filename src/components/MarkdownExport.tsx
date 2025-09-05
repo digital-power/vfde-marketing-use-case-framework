@@ -90,7 +90,7 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
       marginTop: '20px'
     }}>
       <h3 style={{
-        color: '#16a34a',
+        color: '#b91c1c',
         marginBottom: '15px',
         fontSize: '18px',
         fontWeight: '600'
@@ -114,7 +114,7 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
         <button
           onClick={handleCopy}
           style={{
-            background: copySuccess ? '#16a34a' : '#22c55e',
+            background: copySuccess ? '#b91c1c' : '#bd3333',
             color: 'white',
             border: 'none',
             padding: '10px 16px',
@@ -125,10 +125,10 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
             transition: 'all 0.2s ease'
           }}
           onMouseEnter={(e) => {
-            if (!copySuccess) e.currentTarget.style.background = '#16a34a'
+            if (!copySuccess) e.currentTarget.style.background = '#b91c1c'
           }}
           onMouseLeave={(e) => {
-            if (!copySuccess) e.currentTarget.style.background = '#22c55e'
+            if (!copySuccess) e.currentTarget.style.background = '#bd3333'
           }}
         >
           {copySuccess ? '✅ Copied!' : '📋 Copy Markdown'}
@@ -202,7 +202,7 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
                   padding: '6px 12px',
                   borderRadius: '4px',
                   border: '1px solid #d1d5db',
-                  background: previewMode === 'rendered' ? '#22c55e' : 'white',
+                  background: previewMode === 'rendered' ? '#bd3333' : 'white',
                   color: previewMode === 'rendered' ? 'white' : '#374151',
                   fontSize: '12px',
                   cursor: 'pointer'
@@ -216,7 +216,7 @@ export function MarkdownExport({ phases, currentPhase }: MarkdownExportProps) {
                   padding: '6px 12px',
                   borderRadius: '4px',
                   border: '1px solid #d1d5db',
-                  background: previewMode === 'raw' ? '#22c55e' : 'white',
+                  background: previewMode === 'raw' ? '#bd3333' : 'white',
                   color: previewMode === 'raw' ? 'white' : '#374151',
                   fontSize: '12px',
                   cursor: 'pointer'

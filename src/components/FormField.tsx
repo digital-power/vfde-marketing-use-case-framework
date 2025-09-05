@@ -56,7 +56,7 @@ export function FormField({
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
           style={baseStyle}
-          onFocus={(e) => e.target.style.borderColor = '#22c55e'}
+          onFocus={(e) => e.target.style.borderColor = '#bd3333'}
           onBlur={(e) => {
             const isEmpty = !e.target.value || !e.target.value.trim()
             e.target.style.borderColor = isEmpty ? '#fca5a5' : '#e5e7eb'
@@ -76,7 +76,7 @@ export function FormField({
             resize: 'vertical' as const,
             minHeight: '100px'
           }}
-          onFocus={(e) => e.target.style.borderColor = '#22c55e'}
+          onFocus={(e) => e.target.style.borderColor = '#bd3333'}
           onBlur={(e) => {
             const isEmpty = !e.target.value || !e.target.value.trim()
             e.target.style.borderColor = isEmpty ? '#fca5a5' : '#e5e7eb'
@@ -90,7 +90,7 @@ export function FormField({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           style={baseStyle}
-          onFocus={(e) => e.target.style.borderColor = '#22c55e'}
+          onFocus={(e) => e.target.style.borderColor = '#bd3333'}
           onBlur={(e) => {
             const isEmpty = !e.target.value || !e.target.value.trim()
             e.target.style.borderColor = isEmpty ? '#fca5a5' : '#e5e7eb'

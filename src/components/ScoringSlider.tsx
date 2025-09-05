@@ -7,7 +7,7 @@ interface ScoringSliderProps {
 }
 
 export function ScoringSlider({ axis, value, onChange }: ScoringSliderProps) {
-  const greenColor = '#22c55e' // Use green for selected states
+  const redColor = '#bd3333' // Use red for selected states
   
   return (
     <div style={{
@@ -44,7 +44,7 @@ export function ScoringSlider({ axis, value, onChange }: ScoringSliderProps) {
         <div style={{
           fontSize: '18px',
           fontWeight: '700',
-          color: greenColor,
+          color: redColor,
           minWidth: '32px',
           textAlign: 'center'
         }}>
@@ -65,10 +65,10 @@ export function ScoringSlider({ axis, value, onChange }: ScoringSliderProps) {
             style={{
               flex: 1,
               padding: '8px 4px',
-              border: value === score ? `2px solid ${greenColor}` : '1px solid #d1d5db',
+              border: value === score ? `2px solid ${redColor}` : '1px solid #d1d5db',
               borderRadius: '6px',
-              background: value === score ? `${greenColor}15` : 'white',
-              color: value === score ? greenColor : '#6b7280',
+              background: value === score ? `${redColor}15` : 'white',
+              color: value === score ? redColor : '#6b7280',
               fontSize: '14px',
               fontWeight: value === score ? '600' : '400',
               cursor: 'pointer',
@@ -77,8 +77,8 @@ export function ScoringSlider({ axis, value, onChange }: ScoringSliderProps) {
             }}
             onMouseEnter={(e) => {
               if (value !== score) {
-                e.currentTarget.style.borderColor = greenColor
-                e.currentTarget.style.background = `${greenColor}08`
+                e.currentTarget.style.borderColor = redColor
+                e.currentTarget.style.background = `${redColor}08`
               }
             }}
             onMouseLeave={(e) => {
@@ -104,7 +104,7 @@ export function ScoringSlider({ axis, value, onChange }: ScoringSliderProps) {
             key={index}
             style={{
               fontSize: '11px',
-              color: value === index + 1 ? greenColor : '#9ca3af',
+              color: value === index + 1 ? redColor : '#9ca3af',
               fontWeight: value === index + 1 ? '600' : '400',
               textAlign: 'center',
               flex: 1,
